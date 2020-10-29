@@ -22,6 +22,8 @@ console.log(number4); document.write(number4); alert(number4);
 console.log(number5); document.write(number5); alert(number5);
 console.log(number6); document.write(number6); alert(number6);
 console.log(number7); document.write(number7); alert(number7);
+console.log(tx); document.write(tx); alert(tx);
+console.log(tx2); document.write(tx2); alert(tx2);
 
 let unknown = undefined;
 console.log (unknown); document.write(unknown); alert(unknown);
