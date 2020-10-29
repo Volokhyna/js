@@ -85,12 +85,3 @@ if (red=="стой") alert("Молодец")
 else alert("Не правильно.");
 let emergency = prompt("Светофор в аварийном режиме");
 if (emergency == green, yellow ,red) alert("Делай что хочешь");
-
-
-
-
-
- 
-
-
-
