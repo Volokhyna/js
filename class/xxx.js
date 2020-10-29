@@ -74,6 +74,18 @@ let youAge = prompt("Возраст");
 let text = "Доброго вечера Иван Иванов, мои поздравления что вам 32.";
 alert(text);
 
+let green = prompt("Светофор зеленый");
+if (green == "иди") alert("Молодец")
+else alert("Не правильно.");
+let yellow = prompt("Cветофор желтый");
+if (yellow == "подожди") alert("Молодец")
+else alert("Не правильно.");
+let red = prompt("Светофор красный");
+if (red=="стой") alert("Молодец")
+else alert("Не правильно.");
+let emergency = prompt("Светофор в аварийном режиме");
+if (emergency == green, yellow ,red) alert("Делай что хочешь");
+
 
 
 
