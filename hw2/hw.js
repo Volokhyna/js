@@ -81,9 +81,45 @@ emptyArray[6] = true;
 emptyArray[7] = 17;
 emptyArray[8] = 2;
 emptyArray[9] = 'bye';
-for (let index = 0; index < 10; index++) {
-    console.log(emptyArray[index]);
+console.log(emptyArray);
+
+for (let step1 = 0; step1 < 10; step1++) {
+    console.log(step1);
+    document.write(step1);
 }
 
-18
+for (let step2 = 0; step2 < 100; step2++) {
+    console.log(step2);
+    document.write(step2);
+}
+
+for (let step3 = 2; step3 < 100; step3++) {
+    if (step3 % 2 == 0) {
+        console.log(step3);
+        document.write(step3);   
+    }
+}
+
+for (let step4 = 1; step4 < 100; step4++) {
+    if (step4 % 2 != 0) {
+        console.log(step4);
+        document.write(step4);   
+    }
+}
+
+for (let minute = 0; minute <2; minute++) {
+    for (let second = 0; second < 60; second++) {
+        console.log(minute, second);
+    }
+}
+
+for (let hour = 0; hour < 2; hour++) {
+    for (let min = 0; min < 20; min++) {
+        for (let sec = 0; sec < 60; sec++) {
+            console.log(hour, min, sec);
+        }
+    }   
+}
+
+
 
