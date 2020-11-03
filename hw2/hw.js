@@ -120,7 +120,7 @@ for (let step2 = 0; step2 < 100; step2 = step2 + 2) {
 for (let step3 = 2; step3 < 100; step3++) {
     if (step3 % 2 == 0) {
         console.log(step3);
-        document.write(step3);   
+        document.write(step3);
     }
 }
 
@@ -128,7 +128,7 @@ for (let step3 = 2; step3 < 100; step3++) {
 for (let step4 = 1; step4 < 100; step4++) {
     if (step4 % 2 != 0) {
         console.log(step4);
-        document.write(step4);   
+        document.write(step4);
     }
 }
 
@@ -140,19 +140,26 @@ for (let minute = 0; minute < 2; minute++) {
 }
 
 // Відтворити роботу годинника, відрахувавши  2 години 20 хвилини (3 цикли! 1й - години, 2й - хвилини, 3й - секунди)
-// for (let hour = 0; hour <= 2 && hour > 2 && min < 20; hour++) {
-//     for (let min = 0; min < 60; min++) {
-//         for (let sec = 0; sec < 60; sec++) {
-//             console.log(hour, min, sec);
-//         }
-//     }   
-// }
-
+for (let hour = 0; hour <= 2; hour++) {
+    for (let min = 0; min < 60; min++) {
+        for (let sec = 0; sec < 60; sec++) {
+            console.log(`${hour}:${min}:${sec}`);
+        }
+        if (min === 20) {
+            break;
+        }
+    }
+    if (hour === 2) {
+        break;
+    }
+}
 // Додатково
 // Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
-let matrix = [ 'a', 'b', 'c'];
+let matrix = ['a', 'b', 'c'];
+let aa = '';
 for (let a = 0; a < matrix.length; a++) {
-    console.log(matrix[a]); 
+    aa += matrix[a];
+    console.log(aa);
 }
 
 // Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
