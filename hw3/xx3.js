@@ -33,7 +33,6 @@ let user = {
 }
 console.log(user);
 
-
 //  Створити масив та вивести його в консоль:
 // з 5 собак
 // 3 5 людей
@@ -47,8 +46,6 @@ console.log(people);
 
 let car = ['Honda', 'BMW', 'Tayota', 'Mazda', 'Lexus'];
 console.log(car);
-
-
 
 // Дан массив:
 // - звернутися в відповідну ячейку масиву і відповідний параметр об'єкта і вивести в консольх наступне
@@ -90,16 +87,33 @@ console.log(users[5].age, users[5].status);
 // -- Напишіть код,  який за допомоги document.getElementById або document.getElementsByClassName або document.getElementsByTagName :
 // - отримує текст з параграфа з id "content"
 
-let par = document.getElementsByTagName('p');
-console.log(par[0]);
+let par = document.getElementById('content');
+console.log(par.innerText);
 
 // - отримує текст з блоку з id "rules"
 
+let myid = document.getElementById('rules');
+console.log(myid.innerText);
 
 // - замініть текст параграфа з id 'content' на будь-який інший
+par.innerText = 'Its very difficult fo me';
+
 // - замініть текст параграфа з id 'rules' на будь-який інший
+myid.innerText = 'now its easy';
+
 // - змініть кожному елементу колір фону на червоний
+// document.body.style.backgroundColor = 'red';
+
 // - змініть кожному елементу колір тексту на синій
+let element = document.getElementsByTagName('div');
+element.style.color = 'blue';
+
 // - отримати весь список класів елемента з id=rules і вивести їх в console.log
+let ollid = document.getElementById('rules');
+console.log(ollid);
+
 // - отримати всі елементи з класом fc_rules
+let clas = document.getElementsByClassName('fc_rules');
+console.log(clas);
+
 // - поміняти колір тексту у всіх елементів fc_rules на червоний
