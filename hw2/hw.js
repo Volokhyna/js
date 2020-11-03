@@ -155,17 +155,10 @@ for (let hour = 0; hour <= 2; hour++) {
 }
 // Додатково
 // Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
-let matrix = ['a', 'b', 'c'];
-let aa = '';
-for (let a = 0; a < matrix.length; a++) {
-    aa += matrix[a];
-    console.log(aa);
+let a = ['a', 'b', 'c'];
+let string = '';
+for (let st = 0; st < a.length; st++) {
+    string += a[st];
+    console.log(string);
 }
-
-// Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
-// Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-// Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
-
-
-
 
