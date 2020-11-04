@@ -102,11 +102,11 @@ par.innerText = 'Its very difficult fo me';
 myid.innerText = 'now its easy';
 
 // - змініть кожному елементу колір фону на червоний
-// document.body.style.backgroundColor = 'red';
+ par.style.backgroundColor = 'red';
 
 // - змініть кожному елементу колір тексту на синій
 let element = document.getElementsByTagName('div');
-element.style.color = 'blue';
+element[0].style.color = 'blue';
 
 // - отримати весь список класів елемента з id=rules і вивести їх в console.log
 let ollid = document.getElementById('rules');
@@ -117,3 +117,5 @@ let clas = document.getElementsByClassName('fc_rules');
 console.log(clas);
 
 // - поміняти колір тексту у всіх елементів fc_rules на червоний
+// не знаю
+// clas.style.color = 'red';
