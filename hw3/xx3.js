@@ -109,7 +109,7 @@ let element = document.getElementsByTagName('div');
 element[0].style.color = 'blue';
 
 // - отримати весь список класів елемента з id=rules і вивести їх в console.log
-let ollid = document.getElementById('rules');
+let ollid = document.getElementsByClassName('rules');
 console.log(ollid);
 
 // - отримати всі елементи з класом fc_rules
@@ -117,5 +117,6 @@ let clas = document.getElementsByClassName('fc_rules');
 console.log(clas);
 
 // - поміняти колір тексту у всіх елементів fc_rules на червоний
-// не знаю
-// clas.style.color = 'red';
+ for (let clas2 = 0; clas2 < clas.length; clas2++) {
+   clas[clas2].style.color = 'red';  
+ }
