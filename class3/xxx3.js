@@ -49,9 +49,8 @@ for (let i = 0; i < arrayA.length; i++) {
 // -- отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
 
 const isA = document.getElementsByTagName('a');
-for (const ita of isA) {
-    ita.classList.add('element_XXX');
-    ita.innerText += ' XXX ';
+for (let y = 0; y < isA.length; y++) {
+    isA[y].className = 'element_' + isA[y].innerText;
 }
 console.log(isA);
 
@@ -70,11 +69,10 @@ let elem = document.getElementsByClassName('content_1');
 elem[0].innerText = text3;
 
 // -- отримати елементи p та змінити їм paddin на довільне значення
-// работает только с одной 'p', почему? не могу понять
 
 let par = document.getElementsByTagName('p');
-for (let i = 0; i < par.length; i++) {  
-    par[i].style.padding = '15px' 
+for (let x = 0; x < par.length; x++) {
+    par[x].style.padding = '15px'
 }
 
 // -- отримати елементи з класом text2 та змінити їм текст на довільне значення
