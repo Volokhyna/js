@@ -18,8 +18,7 @@ for (const myli of thisli) {
 // -- отримує текст який зберігається в елементі з класом listElement2
 
 let list2 = document.getElementsByClassName('listElement2');
-console.log(list2[1]);
-
+console.log(list2[0].innerText);
 
 // -- отримує всі елементи li та змінює ім колір фону на сірий
 
@@ -58,7 +57,7 @@ console.log(isA);
 
 // -- отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
 
-let color = prompt('Enter color')
+const color = prompt('Enter color')
 let sub = document.getElementsByClassName('sub-header');
 for (const subH of sub) {
     subH.style.backgroundColor = color;
@@ -68,17 +67,17 @@ for (const subH of sub) {
 
 let text3 = prompt('Enter text');
 let elem = document.getElementsByClassName('content_1');
-elem[0].textContent = text3;
+elem[0].innerText = text3;
 
 // -- отримати елементи p та змінити їм paddin на довільне значення
 // работает только с одной 'p', почему? не могу понять
 
 let par = document.getElementsByTagName('p');
-for (let i2 = 0; i2 < par.length; i2++) {  
-    par[i2].style.padding = '15px' 
+for (let i = 0; i < par.length; i++) {  
+    par[i].style.padding = '15px' 
 }
 
 // -- отримати елементи з класом text2 та змінити їм текст на довільне значення
 
 let newclass = document.getElementsByClassName('text2');
-newclass[0].textContent = 'Wow';
+newclass[0].innerText = 'Wow';
