@@ -1,11 +1,57 @@
 // - створити функцію яка виводить масив
+let array = [];
+function thisFunction() {
+    console.log(array);
+}
+thisFunction(array);
 
+// - створити функцію яка заповнює масив рандомними числами та виводить його.
+function isfunction(length, min, max) {
+    let array2 = [];
+    for (let i = 0; i < length; i++) {
+        array2.push(Math.floor(Math.random() * (max - min) + min))
+    }
+    return array2;
+}
+let arr = isfunction(10, 1, 50);
+console.log(arr);
 
-// - створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
+function fun(a, b, c) {
+    let min;
+    if (a <= b && a <= c) min = a;
+    if (b <= a && b <= c) min = b;
+    if (c <= b && c <= a) min = c;
+    return min;
+}
+let x = fun(15, 7, 9);
+console.log(x);
+
 // - створити функцію яка приймає три числа та виводить та повертає найбільше.
+function fun2(a, b, c) {
+    let max;
+    if (a >= b && a >= c) max = a;
+    if (b >= a && b >= c) max = b;
+    if (c >= b && c >= a) max = c;
+    return max;
+}
+let y = fun2(15, 7, 9);
+console.log(y);
+
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
-// - створити функцію яка виводить масив
+function minandmax() {
+    let min = arguments[0];
+    let max = arguments[0];
+    for (const item of arguments) {
+        if (item > max) max = item;
+        if (item < min) min = item;
+    }
+    console.log(max);
+    return min;
+}
+let min = minandmax(123, 87, 4, 130, 93);
+console.log(min);
+
 // - створити функцію яка повертає найбільше число з масиву
 // - створити функцію яка повертає найменьше число з масиву
 // - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.
