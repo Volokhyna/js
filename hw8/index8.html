@@ -11,19 +11,59 @@
 
     <!-- <textarea id="thisarea" cols="40" rows="10"></textarea> -->
 
-    <fieldset style="width: 320px;">
-        <form id="form">
+    <!-- <fieldset style="width: 320px;">
+        <form id="form1" oninput="saveForm(this)">
             <textarea id="area" cols="40" rows="10"></textarea>
-            <input type="text" id="input">
+            <input type="text" id="input1">
             <input type="number" id="input2">
             <input type="checkbox" id="check" value="false">
-            <input type="radio" id="radio" value="false">
+            <input type="radio" id="radio1" value="false">
+            <input type="radio" id="radio2" value="false">
             <select id="select">
                 <option>Вариант1</option>
                 <option>Вариант2</option>
                 <option>Вариант3</option>
                 <option>Вариант4</option>
             </select>
+        </form>
+    </fieldset> -->
+
+    <!-- <div>
+    <input type="button" id="arrow_left" value="Arrow_left">
+    <input type="button" id="arrow_right" value="Arrow_right">
+</div>
+<textarea name="text" id="text" cols="30" rows="10"></textarea>
+<br>
+<input type="button" id="save" value="SAVE"> -->
+
+    <fieldset>
+        <legend>My Form</legend>
+        <form id="form1">
+            <label for="fio">ФИО</label>
+            <br>
+            <input type="text" name="fio">
+            <br>
+            <label for="phone">Номер</label>
+            <br>
+            <input type="tel" name="phone">
+            <br>
+            <label for="mail">Почта</label>
+            <br>
+            <input type="text" name="mail">
+            <br>
+            <label for="firm">Фирма</label>
+            <br>
+            <input type="text" name="firm">
+            <br>
+            <label for="depart">Отдел</label>
+            <br>
+            <input type="text" name="depart">
+            <br>
+            <label for="mail">День рождения</label>
+            <br>
+            <input type="date" name="hb">
+            <br>
+            <input type="submit" id="submit">
         </form>
     </fieldset>
 
